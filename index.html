@@ -16,23 +16,28 @@
   <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a href=""><img src="img/carrinho.png" alt="" class="navbar-toggle car"></a>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <div>
-      <a href="#"><img src="img/logo.png" class="img-responsive" alt="Responsive image"></a>
+      <a href="#"><img src="img/logo.png" class="img-responsive nav-l" alt="Responsive image"></a>  
       </div>  
+      <div class="navbar-bottom">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-hover="dropdown" data-target="#mySearch">
+      <img src="img/1463700967_Find01.png" alt="" class="nav-s">
+      </button>
+      <a href=""><img src="img/carrinho.png" alt="" class="navbar-toggle nav-b"></a>
+      
+      </div>
     </div>
     <div class="collapse navbar-collapse " id="myNavbar">
      <ul class="nav navbar-nav navbar-right">
       <div class="login">
-        <li >Faça <a href="#">Login</a> ou <a href="#">Cadastre-se</a></li>
-        </div>
+        <li >Faça <a href="#" class="op">Login</a> ou <a href="#" class="op">Cadastre-se</a></li>
+        </div>  
       </ul>
-      <ul class="nav navbar-nav nav-f">
+      <ul class="nav navbar-nav nav-f" id="nav-h">
         <li class="active"><a href="#" >Home</a></li>
         <li><a href="#">SOBRE</a></li>
         <li class="dropdown">
@@ -44,21 +49,33 @@
           </ul>
         </li>
         <li><a href="#">CONTATO</a></li>
-      </ul>
-     
+      </ul> 
     </div>
+    <ul class="nav navbar-nav navbar-right">
+      <div class="col-md-4 col-md-offset-5">
+        <div class="collapse navbar-collapse " id="mySearch">
+          <form class="form-inline">
+            <div class="form-group">
+              <li class="active"><input type="text" class="form-control " placeholder="Search..."></li>
+            </div>
+          </form>
+        </div>
+      </div>
+    </ul>
   </div>
 </nav>
 	</header>
   <!-- DESTAQUES -->
   <div class="container">
     <div class="row">
-      <div class="col-md-4"><img src="img/produtos/regata-rexpeita-11-279x279.jpg"></div>
-      <div class="col-md-4"><img src="img/produtos/rexpeita-bone-5panel.telabranco-279x279.jpg"></div>
-      <div class="col-md-4"><img src="img/produtos/rexpeita-bone-newdark-279x279.jpg"></div>
-        <div class="col-md-4"><img src="img/produtos/REGATA-Lowrider-rexpeita-279x279.jpg"></div>
-      <div class="col-md-4"><img src="img/produtos/rexpeita-bone-newfuckhaters-279x279.jpg"></div>
-      <div class="col-md-4"><img src="img/produtos/rexpeita-bone-semestrutura.bege-279x279.jpg"></div>
+      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/regata-rexpeita-11-279x279.jpg"></div>
+      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/rexpeita-bone-5panel.telabranco-279x279.jpg"></div>
+      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/rexpeita-bone-newdark-279x279.jpg"></div>
+      </div>
+      <div class="row">
+      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/REGATA-Lowrider-rexpeita-279x279.jpg"></div>
+      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/rexpeita-bone-newfuckhaters-279x279.jpg"></div>
+      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/rexpeita-bone-semestrutura.bege-279x279.jpg"></div>
     </div>
   </div>
 	 <!-- Script -->
