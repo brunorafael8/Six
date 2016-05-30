@@ -1,5 +1,12 @@
-#slider .item img{
-    display: block;
-    width: 100%;
-    height: auto;
+#slider{
+	margin-bottom: 30px;
+	.item {
+
+		img{
+	    display: block;
+	    width: 100%;
+	    height: auto;
+
+	    }
+	} 
 }

@@ -15,65 +15,96 @@
 </head> 
 <body>
 	<!-- NAV_LOGIN_CARRINHO -->
-  <header>
-  <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-       <button type="button" class="navbar-toggle" data-toggle="collapse" data-hover="dropdown" data-target="#mySearch">
-      <img src="img/1463700967_Find01.png" alt="" class="nav-s">
-      </button>
-      <a href=""><img src="img/carrinho.png" alt="" class="navbar-toggle nav-b"></a>
-
-      <a href="#"><img src="img/logo.png" class="img-responsive nav-l" alt="Responsive image"></a>  
-      </div>  
-      <div class="navbar-left">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      
+  
+<div id="navegacao">
+  <div class="container">
+    <div id="navegacao__content">
+        <nav class="navbar navbar-inverse">
+           <div class="container-fluid">
+              <div class="collapse navbar-collapse login" id="myLogin">
+                <p>Faça seu <a href="#"l>Login</a> ou <a href="#">Cadastre-se</a></p> 
+            </div>
+              <section class="nav-icons">
+                  <button type="button" class="navbar-toggle nav-b" data-toggle="collapse" data-target="#mySearch">
+                  <a href="#"></a><img src="img/find.png" alt="" class="nav-s"></a>
+                  </button>
+                   <a href="#"><img src="img/carrinho.png" alt="" class="navbar-toggle nav-b"></a>
+                 <button type="button" class="navbar-toggle nav-b" data-toggle="collapse" data-target="#myLogin">
+                  <a href="#"><img src="img/user.png" class="nav-s"></a>
+                  </button>
+                  <a href="#"><img src="img/logo.png" class="img-responsive nav-l" alt="Responsive image"></a> 
+               </section>
+            </div>  
+            <div class="navbar-left">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            </div>
+            <div class="collapse navbar-collapse " id="myNavbar">
+              <ul class="nav navbar-nav nav-f" id="nav-h">
+                <li class="active"><a href="#" >Home</a></li>
+                <li><a href="#">SOBRE</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUTOS<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Page 1-1</a></li>
+                    <li><a href="#">Page 1-2</a></li>
+                    <li><a href="#">Page 1-3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">CONTATO</a></li>
+              </ul> 
+              </div>
+           
+        </nav>
       </div>
     </div>
-    <div class="collapse navbar-collapse " id="myNavbar">
-     <ul class="nav navbar-nav navbar-right">
-      <div class="login">
-        <li >Faça <a href="#" class="op">Login</a> ou <a href="#" class="op">Cadastre-se</a></li>
-        </div>  
-      </ul>
-      <ul class="nav navbar-nav nav-f" id="nav-h">
-        <li class="active"><a href="#" >Home</a></li>
-        <li><a href="#">SOBRE</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUTOS<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Page 1-1</a></li>
-            <li><a href="#">Page 1-2</a></li>
-            <li><a href="#">Page 1-3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">CONTATO</a></li>
-      </ul> 
-    </div>
-    
-	</header>
+  </div>
+
+  
+<!-- slider -->
   <div id="slider" class="owl-carousel owl-theme">
-    <div class="item"><img src="img/promo-1.jpg" alt="promo"></div>
-    <div class="item"><img src="img/vendas.jpg" alt="venda" ></div>
+    <div class="item"><a href=""><img src="img/promo-1.jpg" alt="promo"></a></div>
+    <div class="item"><a href=""><img src="img/vendas.jpg" alt="venda" ></a></div>
+  </div>
+<!-- fim do slider -->
+ <div class="container" id="promocoes">
+  <div class="content">
+    <div class="heading">
+      <h2>
+      <span></span>
+        PROMOÇÔES
+      </h2>
+    </div>
+    </div>
   </div>
   <!-- DESTAQUES -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/regata-rexpeita-11-279x279.jpg"></div>
-      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/rexpeita-bone-5panel.telabranco-279x279.jpg"></div>
-      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/rexpeita-bone-newdark-279x279.jpg"></div>
+  <div class="container" id="destaques">
+    <div class="content">
+      <div class="heading">
+      <h2>
+      <span></span>
+        DESTAQUES
+        </h2>
+        </div>
       </div>
-      <div class="row">
-      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/REGATA-Lowrider-rexpeita-279x279.jpg"></div>
-      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/rexpeita-bone-newfuckhaters-279x279.jpg"></div>
-      <div class="col-md-4"><img class="img-responsive" alt="Responsive image" src="img/produtos/rexpeita-bone-semestrutura.bege-279x279.jpg"></div>
+    <div id="destaques__itens">
+     <div class="destaque__item"><img src="img/produtos/regata-lawsofthestreet-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
+     <div class="destaque__item"><img src="img/produtos/REGATA-Lowrider-rexpeita-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
+     <div class="destaque__item"><img src="img/produtos/regata-rexpeita-11-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
+     <div class="destaque__item"><img src="img/produtos/regata-rexpeita-2-1-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
+     <div class="destaque__item"><img src="img/produtos/rexpeita-bone-5panel.telabranco-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
+     <div class="destaque__item"><img src="img/produtos/rexpeita-bone-familia-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
+     <div class="destaque__item"><img src="img/produtos/rexpeita-camisa-block-300x500.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
+     <div class="destaque__item"><img src="img/produtos/rexpeita-bone-newfuckhaters-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
+     <div class="destaque__item"><img src="img/produtos/rexpeita.moletom.taghs.1-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
     </div>
+ 
+  
   </div>
+
 	 <!-- Script -->
 	 <script src="js/vendors/bootstrap/bootstrap.min.js"></script>
    <script src="js/vendors/owl-carousel/owl.carousel.min.js"></script>

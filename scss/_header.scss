@@ -1,36 +1,69 @@
 body{ 
-	>header {
-		.login {
-			 li {
-			 	color: #ffffff;	
-			 	margin-left: 15px;	
-			 	font-family: $font_main;
+	> #navegacao{
+		background-color: #000000;
+		> .container {
+			#navegacao__content {
+				@include make-md-column(12);
 
-			 	.op {
-			 		text-decoration: none;
-			 		
-			 		
-			 	}
-			 }
+				.navbar{
+					border-radius: 0;
+					box-shadow: none;
+					border: none;
+					background-color: #000000;
+					margin-bottom: 0;
+					.navbar-collapse {
+						border: none;
+						>ul.navbar-nav{
+							>li{
+								&.active{
+									>a {
+										color: $color_main;
+									}
+								}	
+								a{
+									color: #fff;
+									font: 14px $font_main;
+								}
+							}
+								>li.dropdown{	
+									>ul.dropdown-menu{
+
+										>li{
+											>a{
+												color: #000;
+											}
+										}
+									}
+								}	
+						}
+					}
+					.login{
+						>p{
+							color: #fff;
+							>a{
+								text-decoration: none;
+								color: $color_main;
+							}
+						}
+
+					}
+				}
+			}
 		}
+	}
+	
 
-		.nav-f {
-			font-family: $font_main;
 
-		}
+
+
 		.nav-b {
 			width: 50px;
 			height: 50px;
+			position: relative;
 		}
 		.nav-s {
 			width: 30px;
 			height: 30px;
 		}
-		.nav-search {
-			width: 20%;
-		}
 
-
-
-	}
 }
