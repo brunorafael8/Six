@@ -11,6 +11,29 @@ body{
 					border: none;
 					background-color: #000000;
 					margin-bottom: 0;
+					.login{
+						>p{
+							color: #fff;
+							>a{
+								text-decoration: none;
+								color: $color_main; }
+							}
+						}
+					.nav-icons{
+						margin-right: -20px;
+						.navbar-toggle{
+							border: none;
+							margin-right: 0px;
+						}
+						>.find{
+							margin-right: 0px;
+						}
+					}
+					.navbar-left{
+						>.navbar-toggle{
+							margin-right: -20px;
+						}
+					}
 					.navbar-collapse {
 						border: none;
 						>ul.navbar-nav{
@@ -18,6 +41,8 @@ body{
 								&.active{
 									>a {
 										color: $color_main;
+										font: 15px $font_main;
+									
 									}
 								}	
 								a{
@@ -31,39 +56,29 @@ body{
 										>li{
 											>a{
 												color: #000;
+												}
 											}
 										}
-									}
-								}	
+									}	
+								}
+							}				
 						}
-					}
-					.login{
-						>p{
-							color: #fff;
-							>a{
-								text-decoration: none;
-								color: $color_main;
-							}
-						}
-
 					}
 				}
 			}
-		}
-	}
 	
 
 
 
 
 		.nav-b {
-			width: 50px;
-			height: 50px;
-			position: relative;
+			width: 40px;
+			height: 40px;
+			
 		}
 		.nav-s {
-			width: 30px;
-			height: 30px;
+			width: 20px;
+			height: 20px;
 		}
 
 }

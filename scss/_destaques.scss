@@ -1,11 +1,11 @@
 #destaques {
-	> #destaques__itens {
-		> .destaques__item{
-			
-			@include make-md-column(4);
-			@include make-sm-column(6);
-			@include make-xs-column(3);
+	> #destaques__item {
+		> .destaques__itens{
+			@include make-md-column(5);
+			@include make-lg-column(4);
+			@include make-sm-column(4);
+			@include make-xs-column(12);
 
 		}
 	}
-}
+}		
