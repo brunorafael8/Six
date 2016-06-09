@@ -1,0 +1,95 @@
+@media screen and (min-width: 768px) {
+	body{ 
+		> #navegacao{
+			background-color: #000;
+			> .container {
+				#navegacao__content {
+					@include make-md-column(12);
+					
+					.navbar{
+						border-radius: 0;
+						box-shadow: none;
+						border: none;
+						background-color: #000;
+						margin-bottom: 0;
+						.content-nav{
+							@include make-md-column(12);
+							#mySearch{
+								display: none;
+							} 
+							.form-inline{
+								margin-top: -40px;
+
+							}
+						}
+
+						.nav-l{	
+							height: 100px;
+							}
+						.navbar-left{
+							>.navbar-toggle{
+								margin-right: -20px;
+							}
+						}
+						.navbar-collapse {
+							border: none;
+							>ul.navbar-nav{
+								>li{
+									&.active{
+										>a {
+											color: $color_main;
+											font: 15px $font_main;
+										
+										}
+									}	
+									a{
+										color: #fff;
+										font: 14px $font_main;
+									}
+								}
+									>li.dropdown{	
+										>ul.dropdown-menu{
+
+											>li{
+												>a{
+													color: #000;
+													}
+												}
+											}
+										}	
+									}
+								}				
+							}
+						}
+					}
+				}
+	}
+}
+.nav-icons{
+	@include make-md-column(12);
+	margin-top: 20px;
+	
+	#login_text{
+ 		color: #fff;
+ 		padding: 0;
+ 		margin-left: 15px;
+ 	}
+ 	#fa__user{
+ 		margin-left: 2px;
+ 	}
+	#fa__search {
+		font-size: 20px;
+		color: #fff;
+		padding: 0;
+		margin-left: 15px;
+		
+
+	}
+ 	#fa__cart{
+ 		font-size: 20px;
+ 		color: #fff;
+ 		margin-left: 15px;
+ 	}
+
+
+}

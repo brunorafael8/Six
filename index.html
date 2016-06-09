@@ -8,6 +8,7 @@
 	<script src="js/vendors/jquery/jquery-2.1.4.min.js"></script>
 	<link rel="stylesheet" href="css/vendors/plugins.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
 </head> 
@@ -19,20 +20,74 @@
     <div id="navegacao__content">
         <nav class="navbar navbar-inverse">
            <div class="container-fluid">
-              <div class="collapse navbar-collapse login" id="myLogin">
-                <p>Faça seu <a href="#"l>Login</a> ou <a href="#">Cadastre-se</a></p> 
-            </div>
-              <section class="nav-icons">
-                  <button type="button" class="navbar-toggle nav-b find" data-toggle="collapse" data-target="#mySearch">
-                  <a href="#"></a><img src="img/find.png" alt="" class="nav-s"></a>
-                  </button>
-                   <a href="#"><img src="img/carrinho.png" alt="" class="navbar-toggle nav-b"></a>
-                 <button type="button" class="navbar-toggle nav-b" data-toggle="collapse" data-target="#myLogin">
-                  <a href="#"><img src="img/user.png" class="nav-s"></a>
-                  </button>
+           <div class="content-nav">
+                  <section class="nav-icons">
+                  <ul class="nav navbar-nav navbar-right">
+                                     <!-- login -->
+                  <li class="dropdown ">
+                            <a href="#" id="login_text" data-toggle="dropdown">Login<span id="fa__user"><i class="fa fa-user" ></i></span></a>
+                        <ul id="login-dp" class="dropdown-menu">
+                          <li>
+                             <div class="row">
+                                <div class="col-md-12">
+                                  Login via
+                                  <div class="social-buttons">
+                                    <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                    <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                  </div>
+                                                  ou
+                                   <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                      <div class="form-group">
+                                         <label class="sr-only" for="exampleInputEmail2">Email</label>
+                                         <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email" required>
+                                      </div>
+                                      <div class="form-group">
+                                         <label class="sr-only" for="exampleInputPassword2">Senha</label>
+                                         <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha" required>
+                                                               <div class="help-block text-right"><a href="">Esqueceu a senha ?</a></div>
+                                      </div>
+                                      <div class="form-group">
+                                         <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                                      </div>
+                                   </form>
+                                </div>
+                                <div class="bottom text-center">
+                                  Novo Aqui? <a href="#"><b>Cadastre-se</b></a>
+                                </div>
+                             </div>
+                          </li>
+                        </ul>
+                          </li>
+    
+                  <!-- fim do login -->
+
+                  <!-- Search -->
+                  <li class="dropdown ">
+                      <a href="#" id="fa__search"><i class="fa fa-search"></i></a>
+                      <ul id="search-dp" class="dropdown-menu">
+                          <li>
+                             <div class="row">
+                                <div class="col-md-12">
+                                   <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                      <div class="form-group">
+                                         <label class="sr-only" for="exampleInputEmail2">Search...</label>
+                                         <input type="tex" class="form-control" id="search_input" placeholder="Search..." required>
+                                      </div>
+                                    </form>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                   <!-- fim search -->
+                   <a href="#"><i class="fa fa-shopping-cart" id="fa__cart"></i></a>
+                   </ul>
+
+
                </section>
-                  <a href="#"><img src="img/logo.png" class="img-responsive nav-l" alt="Responsive image"></a> 
-            </div>  
+               </div>
+              <div class="logo__header"><img src="img/logo.png" class="img-responsive nav-l" alt="Responsive image"></div>
+             </div>
             <div class="navbar-left">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="icon-bar"></span>
@@ -55,6 +110,7 @@
                 <li><a href="#">CONTATO</a></li>
               </ul> 
               </div>
+        
         </nav>
       </div>
     </div>
@@ -87,20 +143,15 @@
 </div>
 
 
-<!-- slider -->
- <!-- <div id="slider" class="owl-carousel owl-theme">
-    <div class="item"><a href=""><img src="img/promo-1.jpg" alt="promo"></a></div>
-    <div class="item"><a href=""><img src="img/vendas.jpg" alt="venda" ></a></div>
-  </div>
-<!-- fim do slider -->
  <div class="container" id="promocoes">
   <div class="content">
-    <div class="heading">
-      <h2>
-      <span></span>
-        PROMOÇÔES
-      </h2>
-    </div>
+        <div id="promo__item" class="promo__item">
+        <div class="promo__itens"><img src="img/promo-a.jpg" class="img-responsive" alt="Responsive image"></div>
+        <div class="promo__itens"><img src="img/promo-b.jpg" class="img-responsive" alt="Responsive image"></div>
+        <div class="promo__itens"><img src="img/promo-d.jpg" class="img-responsive" alt="Responsive image"></div>
+        <div class="promo__itens"><img src="img/promo-e.png" class="img-responsive" alt="Responsive image"></div>           
+          </div>
+        </div>
     </div>
   </div>
   <!-- DESTAQUES -->
@@ -114,67 +165,186 @@
        </div>
       </div>
     <div id="destaques__item" class="container__destaques">
-     <div class="destaques__itens"><img src="img/produtos/regata-lawsofthestreet-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
-     <div class="destaques__itens"><img src="img/produtos/REGATA-Lowrider-rexpeita-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
-     <div class="destaques__itens"><img src="img/produtos/regata-rexpeita-11-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
-     <div class="destaques__itens"><img src="img/produtos/regata-rexpeita-2-1-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
-     <div class="destaques__itens"><img src="img/produtos/rexpeita-bone-5panel.telabranco-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
-     <div class="destaques__itens"><img src="img/produtos/rexpeita-bone-familia-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
-     <div class="destaques__itens"><img src="img/produtos/rexpeita-bone-semestrutura.bege-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
-     <div class="destaques__itens"><img src="img/produtos/rexpeita-bone-newfuckhaters-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
-     <div class="destaques__itens"><img src="img/produtos/rexpeita.moletom.taghs.1-279x279.jpg" class="img-responsive nav-l" alt="Responsive image"></div>
-     
-    </div> 
-  </div>
-  <footer>
+    <article class="destaques__itens">
+      <figure class="snip1321"><img src="img/produtos/Camisa1.png" alt="sq-sample26"/>
+      <figcaption>
+        <h4>GOSTOU?</h4>
+        <a href="#" data-toggle="modal" data-target="#myModal"><h2>COMPRAR</h2></a>
+      </figcaption>
+      </figure>
+      <div class="destaques__produto">  
+      <h4>Camisa1</h4>
+      <p>R$99,00</p>
+     </div>
+    </article>
+    <!-- End produto -->
+     <article class="destaques__itens">
+      <figure class="snip1321"><img src="img/produtos/Camisa2.png" alt="sq-sample26"/>
+      <figcaption>
+        <h4>GOSTOU?</h4>
+        <a href="#" data-toggle="modal" data-target="#myModal"><h2>COMPRAR</h2></a>
+      </figcaption>
+      </figure>
+      <div class="destaques__produto">  
+      <h4>Camisa1</h4>
+      <p>R$99,00</p>
+     </div>
+    </article>
+    <!-- End produto -->
+     <article class="destaques__itens">
+      <figure class="snip1321"><img src="img/produtos/Camisa3.png" alt="sq-sample26"/>
+      <figcaption>
+        <h4>GOSTOU?</h4>
+       <a href="#" data-toggle="modal" data-target="#myModal"><h2>COMPRAR</h2></a>
+      </figcaption>
+      </figure>
+      <div class="destaques__produto">  
+      <h4>Camisa1</h4>
+      <p>R$99,00</p>
+     </div>
+    </article>
+    <!-- End produto -->
+     <article class="destaques__itens">
+      <figure class="snip1321"><img src="img/produtos/Camisa4.png" alt="sq-sample26"/>
+      <figcaption>
+        <h4>GOSTOU?</h4>
+        <a href="#" data-toggle="modal" data-target="#myModal"><h2>COMPRAR</h2></a>
+      </figcaption>
+      </figure>
+      <div class="destaques__produto">  
+      <h4>Camisa1</h4>
+      <p>R$99,00</p>
+     </div>
+    </article>
+    <!-- End produto -->
+     <article class="destaques__itens">
+      <figure class="snip1321"><img src="img/produtos/Camisa5.png" alt="sq-sample26"/>
+      <figcaption>
+        <h4>GOSTOU?</h4>
+        <a href="#" data-toggle="modal" data-target="#myModal"><h2>COMPRAR</h2></a>
+      </figcaption>
+      </figure>
+      <div class="destaques__produto">  
+      <h4>Camisa1</h4>
+      <p>R$99,00</p>
+     </div>
+    </article>
+    <!-- End produto -->
+     <article class="destaques__itens">
+      <figure class="snip1321"><img src="img/produtos/Camisa6.png" alt="sq-sample26"/>
+      <figcaption>
+        <h4>GOSTOU?</h4>
+        <a href="#" data-toggle="modal" data-target="#myModal"><h2>COMPRAR</h2></a>
+      </figcaption>
+      </figure>
+      <div class="destaques__produto">  
+      <h4>Camisa1</h4>
+      <p>R$99,00</p>
+     </div>
+    </article>
+    <!-- End produto -->
+   
+</div>
+<!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <div class="modal-body">
+          <div class="container-fluid">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="row">
+                <div class="col-md-6  ">
+                <div class="img__modal"><img src="img/produtos/Camisa6.png" class="img-responsive nav-l" alt="Responsive image"></div>
+                </div>
+                <div class="info__modal">
+                  <div class="col-md-6"><h2 class="modal-title">PRODUTO X </h2></div>
+                  <div class="col-md-6"><h3 class="modal-title">R$ 00,00</h3></div>
+                  <div class="Medidas__modal">
+                  <div class="header__med">Medidas:</div>
+                   <div class='range-picker' id='range-picker'>
+                      <div>P</div><div>M</div><div>G</div><div class='active'>GG</div>
+                    </div>
+                    <div class="Frete__modal">Frete Grátis nas compras acima de R$99,00</div>
+                    <a href=""><div class="car__button"><h4> <span><i class="fa fa-shopping-cart" id="cart__modal"></i></span>Adicionar no Carrinho</h4></div></a>
+                  </div>
+                  
+
+                  </div> 
+                  </div>
+                     
+                  </div>
+                </div>
+      
+              </div>
+          </div>
+      </div>
+    </div>
+    </div>
+      </div> 
+      </div>
+
+
+  <footer class="footer__test">
     <div class="container">
-      <div class="content"  id="footer-sidebar">
+      <div class="content" id="footer-sidebar">
         <div class="footer-widget">
           <h4 class="widget__title">
-            <span></span>
+                      Informações
           </h4>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>sahusuha</li>
+            <li><span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>sahusuha</li>
+            <li><span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>sahusuha</li>
+            <li><span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>sahusuha</li>
           </ul>          
         </div>
         <div class="footer-widget">
           <h4 class="widget__title">
-            <span></span>
+                      Contato
           </h4>
-          
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+            <li><span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>sahusuha</li>
+            <li><span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>sahusuha</li>
+            <li><span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>sahusuha</li>
+            <li><span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>sahusuha</li>
+          </ul> 
         </div>
         <div class="footer-widget">
           <h4 class="widget__title">
-            <span></span>
+                       Rede sociais
           </h4>
           
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul> 
+        <div class="footer__rede">
+        <div class="container__social">
+            <a href="" class="box_footer"><i class="fa fa-facebook"></i></a>
+            <a href="" class="box_footer"><i class="fa fa-twitter"></i></a>
+            <a href="" class="box_footer"><i class="fa fa-instagram"></i></a>
+      
+          </div>
+        </div>
         </div>        
       </div>
     </div>
   </footer>
 
+</figure>
+
 	 <!-- Script -->
 	 <script src="js/vendors/bootstrap/bootstrap.min.js"></script>
    <script src="js/main.js"></script>
-	 
+    <script>
+      document.getElementById('range-picker').addEventListener('click', function(e) {
+  var sizeList = document.getElementById('range-picker').children;
+  for (var i = 0; i <= sizeList.length - 1; i++) {
+    console.log(sizeList[i].classList);
+    if (sizeList[i].classList.contains('active')) {
+      sizeList[i].classList.remove('active');
+    }
+  }
+  e.target.classList.add('active');
+});
+    </script>
 	
 </body>
 </html>
